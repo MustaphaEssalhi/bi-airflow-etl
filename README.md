@@ -14,11 +14,9 @@ This project sets up an ETL (Extract, Transform, Load) pipeline using Apache Air
 │   ├── exported_tables/     # Directory containing exported tables
 ├── import/                 # Import-related files
 │   ├── import-access.py     # Script for importing Microsoft Access data
-│   ├── orion.mdb            # Microsoft Access database file
 ├── logs/                    # Airflow logs
 ├── plugins/                 # Custom Airflow plugins
 ├── requirements.txt         # Python dependencies
-├── versions/                # Version control for pipeline changes
 ```
 
 ## Setup & Installation
@@ -51,6 +49,12 @@ The main DAG (`my-bi.py`) performs the following steps:
 2. Transform the extracted data.
 3. Load the transformed data into PostgreSQL.
 4. Store exported data for visualization.
+
+## Download Orion Database
+The `orion.mdb` file is not included in the repository. You can download it from the following link:
+[Download orion.mdb](<link>)
+
+Place the downloaded `orion.mdb` file inside the `import/` directory before running the pipeline.
 
 ## Troubleshooting
 - Check Airflow logs in the `logs/` directory if any issues occur.
