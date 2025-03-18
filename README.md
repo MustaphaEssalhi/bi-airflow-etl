@@ -69,6 +69,4 @@ Place the downloaded `orion.mdb` file inside the `import/` directory before runn
 - Optimize data transformations for better performance.
 - Integrate with BI tools like Tableau or Power BI.
 
-## License
-This project is licensed under the MIT License.
 
